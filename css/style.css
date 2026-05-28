@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Estilos Generales y Reseteo
+   ========================================================================== */
+
+/* Reseteo básico de márgenes y caja para consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración de scroll suave para los enlaces internos de la navegación */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tipografía base del sitio y color de texto por defecto para legibilidad */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #264653;
+    line-height: 1.6;
+}
+
+/* Contenedor fijo centrado para limitar el ancho máximo del diseño */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos principales de cada sección del portafolio */
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Header y Navegación Principal
+   ========================================================================== */
+
+/* Encabezado fijo superior con el color principal oscuro de fondo */
+.sitio-header {
+    background-color: #264653;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Caja flexible para alinear el logo a la izquierda y el menú a la derecha */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Representación del logotipo cuadrado solicitado */
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #B5E2FA;
+    color: #264653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Enlaces de navegación con espaciado horizontal y transiciones suaves */
+.navegacion-principal a {
+    color: #F9F7F3;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover utilizando el color de acento */
+.navegacion-principal a:hover {
+    color: #0FA3B1;
+}
+
+/* ==========================================================================
+   Sección Hero (Presentación)
+   ========================================================================== */
+
+/* Fondo claro 2 y padding amplio para separar las secciones notablemente */
+.seccion-hero {
+    background-color: #F9F7F3;
+    padding: 100px 0;
+}
+
+/* Layout de dos columnas utilizando flexbox equilibrado al 50% */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-columna-izquierda {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-columna-derecha {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos de los textos principales del Hero */
+.hero-columna-izquierda h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-columna-izquierda .subtitulo {
+    font-size: 1.5rem;
+    color: #2A9D8F;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Botón principal de llamada a la acción con transiciones */
+.boton-accion {
+    display: inline-block;
+    background-color: #0FA3B1;
+    color: #F9F7F3;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
